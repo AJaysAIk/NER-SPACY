@@ -47,7 +47,7 @@ Project Structure
  Contains the code to load and preprocess the CoNLL-2003 dataset, train the spaCy NER model, save the model, and evaluate its performance.
 README.md: This file!
 Running the Project
-1. Training and Evaluating the NER Model
+Training and Evaluating the NER Model
 Simply run the training script:
 Download the CoNLL-2003 dataset using the Hugging Face datasets library.
 Convert the dataset into spaCy’s required format.
@@ -122,6 +122,7 @@ from pyngrok import ngrok
 public_url = ngrok.connect(8000)
 print("Public URL:", public_url)
 This generates a temporary URL you can share with anyone for testing your NER endpoint in real time.
+
 4. API Usage Guide
 Assuming you’re running FastAPI on port 8000, and ngrok has given you a public URL like https://xyz.ngrok.io, you can test your NER endpoint with:
 
