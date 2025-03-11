@@ -54,3 +54,6 @@ Convert the dataset into spaCy’s required format.
 Initialize a blank English spaCy model, add the NER pipeline, and train it for 30 epochs (feel free to adjust the epoch count).
 Save the trained model to disk (by default in /content/ner_model).
 Load the model to make sample predictions and evaluate performance using Precision, Recall, and F1-Score metrics.
+
+![image](https://github.com/user-attachments/assets/e384e402-1b90-4e5e-8794-e8a8da446d43)
+
