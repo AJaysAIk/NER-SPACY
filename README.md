@@ -123,21 +123,4 @@ public_url = ngrok.connect(8000)
 print("Public URL:", public_url)
 This generates a temporary URL you can share with anyone for testing your NER endpoint in real time.
 
-4.API Usage Guide
-Assuming you’re running FastAPI on port 8000, and ngrok has given you a public URL like https://xyz.ngrok.io, you can test your NER endpoint with:
-
-bash
-Copy
-curl -X GET "https://xyz.ngrok.io/predict?text=John%20lives%20in%20New%20York" \
-     -H "Accept: application/json"
-You’ll get a JSON response containing the recognized entities, for example:
-
-json
-Copy
-{
-  "entities": [
-    ["John", "PER"],
-    ["New York", "LOC"]
-  ]
-}
 
