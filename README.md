@@ -80,7 +80,7 @@ Feature Engineering
 In a basic NER pipeline, the main “features” revolve around token embeddings, word shape, prefixes/suffixes, etc. SpaCy handles these features internally once we provide the raw text and labeled spans.
 No additional external features (like POS tags or lexicons) were used, but you can easily extend this approach if you want more advanced feature engineering.4
 
-2. Model Selection & Optimization Approach
+2.Model Selection & Optimization Approach
 Blank spaCy Model
 
 We initialize a blank English model (nlp = spacy.blank("en")) and add the ner pipeline to it.
@@ -103,7 +103,7 @@ Further optimization might involve:
 Using a pre-trained model (e.g., en_core_web_sm) instead of a blank one.
 Adjusting the learning rate or dropout.
 
-3. Deployment Strategy
+3.Deployment Strategy
 Local Deployment
 
 Once the model is trained, it’s saved to disk (e.g., nlp.to_disk("/content/ner_model")).
